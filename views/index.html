@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>Document</title>
+    <script defer src= "static/face-api.min.js"></script>
+    <script defer src= "static/script.js"></script>
+    <style>
+      body{
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      canvas{
+        position: absolute;
+      }
+
+      .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+       transform: translateX(-50%) translateY(-50%);
+    }
+
+      h2{
+        text-align: center;
+      }
+
+      .age{
+        position: relative;
+        top: 20%;
+        
+      }
+     
+    </style>
+  </head>
+  <body>
+    <div class ="container">
+      <img id= "myImg" src="pics/tom-hardy.png" alt="osmanzaim" width="320" height="330">
+    
+      
+    </div>
+    <div class="age"><h2 id="ageAndGenderDisplayer">Age, Gender & Gender Probabilty</h2>
+      <input type="file" accept="image/*" name="image" id="file"  onchange="loadFile(event)" >
+      </div>
+      
+
+  
+    
+  </body>
+</html>
